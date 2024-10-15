@@ -2,7 +2,10 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(76, 114, 139); /* Font color */
+    background-color: #f5efe8; /* Background color */
   }
   
   /* Navbar Styles */
@@ -106,3 +109,29 @@ body {
     }
   }
   
+  #faqs {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  h2, h3 {
+    font-family: 'DM Serif Display', serif; /* DM Serif Display for body text */
+    color: rgb(76, 114, 139); /* Heading font color */
+    text-align: center;
+  }
+
+  p {
+    font-family: 'Flow Circular', sans-serif; /* Apply Flow Circular font to <p> */
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  a {
+    color: rgb(76, 114, 139); /* Link color */
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
