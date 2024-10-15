@@ -14,8 +14,10 @@ body {
     color: white;
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    position: absolute;
     align-items: center;
+    width: 100%;
   }
   
   .navbar h1 {
@@ -80,6 +82,10 @@ body {
   #password-overlay {
     display: block;
   }
+
+  .note {
+    font-style: italic; /* Italic style for the note */
+}
   
   /* Mobile Styles */
   @media (max-width: 768px) {
@@ -106,6 +112,11 @@ body {
   
     section {
       padding: 1rem;
+    }
+
+    .column {
+        flex: 1;
+        margin: 0 10px; /* Spacing between columns */
     }
   }
   
@@ -135,3 +146,43 @@ body {
   a:hover {
     text-decoration: underline;
   }
+
+
+  .welcome-images {
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-align: center;
+}
+
+.image1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%; /* Half the width of the viewport */
+    height: 100%; /* Full height */
+    background-image: url('images/creamee.jpeg'); /* Replace with your first image */
+    background-size: cover; /* Cover the full area */
+    background-position: center; /* Center the image */
+}
+
+.image2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%; /* Half the width of the viewport */
+    height: 100%; /* Full height */
+    background-image: url('images/rings.jpeg'); /* Replace with your second image */
+    background-size: cover; /* Cover the full area */
+    background-position: center; /* Center the image */
+}
+
+.overlay {
+    position: relative;
+    color: white; /* Text color */
+    font-size: 2.5rem; /* Text size */
+    font-family: 'DM Serif Display', serif; /* Use your desired font */
+    z-index: 1; /* Place text above the images */
+}

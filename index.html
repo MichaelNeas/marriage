@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wedding Website</title>
+  <title>DAM Marriage</title>
   <!-- Load Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,18 +12,17 @@
 </head>
 <body>
   <!-- Password Protected Overlay -->
-  <div id="password-overlay" class="overlay">
+  <!-- <div id="password-overlay" class="overlay">
     <div class="password-box">
       <h2>Enter Password</h2>
       <input type="password" id="password-input" placeholder="Password" />
       <button onclick="checkPassword()">Enter</button>
       <p id="error-msg"></p>
     </div>
-  </div>
+  </div> -->
 
   <!-- Navigation Bar -->
   <nav class="navbar">
-    <h1>Our Wedding</h1>
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <ul id="nav-links" class="nav-links">
       <li><a href="#home">Home</a></li>
@@ -36,21 +35,64 @@
 
   <!-- Sections -->
   <section id="home">
-    <h2>Welcome</h2>
-    <p>We're excited to celebrate our special day with you!</p>
+    <div class="welcome-images">
+        <div class="image1"></div>
+        <div class="image2"></div>
+        <div class="overlay">
+            <h1>Our Marriage Celebration</h1>
+        </div>
+    </div>
+    Mike & Daley
+    May 31, 2025
+    Rochester, VT
+    A fun & relaxed backyard celebration
+    We can't wait to party with ya!
+
+    Reach out to Daley with questions 802-565-0030
+   <img src="images/rsvp.jpeg" alt="rsvp" class="rsvp-image"> <!-- Image for Schedule -->
   </section>
 
   <section id="schedule">
-    <h2>Wedding Schedule</h2>
-    <p>Ceremony: 3:00 PM at [Location]</p>
-    <p>Reception: 5:00 PM at [Venue]</p>
+    <img src="images/schedule.png" alt="Schedule" class="schedule-image"> <!-- Image for Schedule -->
+    
+    <div class="schedule">
+        <p><strong>Saturday, May 31, 2025</strong></p>
+        <p>2:00 PM: Arrive</p>
+        <p>3:00 - 5:00 PM: Open mic and lawn games</p>
+        <p>5:00 - 5:30 PM: Gather 'round and give thanks <3</p>
+        <p>5:30 - 6:30 PM: Food truck - eat on your own time</p>
+        <p>6:30 - 8:00 PM: Games, drinks, chill</p>
+        <p>8:00 - 10:00 PM: Dance, dessert, fire</p>
+    </div>
   </section>
 
   <section id="travel">
     <h2>Travel Information</h2>
-    <p>Hotel: [Hotel Name & Address]</p>
-    <p>Airport: [Nearest Airport]</p>
-  </section>
+    <img src="images/directions.png" alt="Directions" class="directions-image">
+    <p>Out-of-town guests! Book your housing early and please reach out with questions!</p>
+    <section class="section">
+        <div class="column">
+            <h3>Flight</h3>
+            <strong>Burlington International Airport</strong>
+        </div>
+        <div class="column">
+            <p>Burlington International Airport is about 1 hour from the wedding venue in Rochester, VT, and about 10 minutes from Mike and Daley's home in Essex, VT.</p>
+            <p>The airport is very small, so flights can be pricy, definitely set up price alerts early!</p>
+            <button class="button" onclick="window.open('https://www.flyburlington.com/', '_blank')">View Airport Info</button>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="column">
+            <h3>Places to Stay</h3>
+            <p class="note">I have created a list of places to stay on Google Sheets. Most options are AirBnB/Virbo along with a few old school bed & breakfasts / inns in town.</p>
+        </div>
+        <div class="column">
+            <button class="button" onclick="window.open('YOUR_GOOGLE_SHEET_LINK_HERE', '_blank')">View Places to Stay</button>
+        </div>
+    </section>
+
+</section>
 
   <section id="faqs">
     <h2>Frequently Asked Questions</h2>
