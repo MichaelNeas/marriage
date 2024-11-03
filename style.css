@@ -7,7 +7,6 @@
     justify-content: center;
     /* position: absolute; */
     align-items: center;
-    width: 100%;
   }
   
   .navbar h1 {
@@ -38,7 +37,10 @@
     /* Mobile Styles */
     @media (max-width: 768px) {
         .menu-toggle {
-          display: block;
+          display: flex;
+          flex-direction: row-reverse;
+          flex: auto;
+          /* margin-right: 5%; */
         }
       
         .nav-links {
@@ -58,7 +60,7 @@
           display: block;
           padding: 0.5rem;
         }
-      
+
         section {
           padding: 1rem;
         }
@@ -132,6 +134,17 @@ body {
     align-items: center;
   } */
 
+  .rsvp-image, .schedule-image, .directions-image {
+    width: 100%;
+  }
+
+  #light-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .welcome-images {
     position: relative;
     height: 100vh; /* Full height of the viewport */
@@ -141,26 +154,15 @@ body {
     text-align: center;
 }
 
-.image1 {
+.cover-image {
     position: absolute;
     top: 0;
     left: 0;
-    width: 60%; /* Half the width of the viewport */
+    width: 100%; /* Half the width of the viewport */
     height: 100%; /* Full height */
-    background-image: url('images/creamee.jpeg'); /* Replace with your first image */
+    background-image: url('images/daley-mike-27.jpg'); /* Replace with your first image */
     background-size: cover; /* Cover the full area */
-    background-position: center; /* Center the image */
-}
-
-.image2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40%; /* Half the width of the viewport */
-    height: 100%; /* Full height */
-    background-image: url('images/rings.jpeg'); /* Replace with your second image */
-    background-size: cover; /* Cover the full area */
-    background-position: center; /* Center the image */
+    background-position: right; /* Center the image */
 }
 
 .overlay {
@@ -185,6 +187,11 @@ body {
     padding: 20px;
     max-width: 800px;
     margin: auto;
+  }
+  .schedule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
   #faqs {
