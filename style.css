@@ -99,6 +99,10 @@ body {
     border-bottom: 1px solid #ddd;
   }
 
+  h1 {
+    font-family: 'DM Serif Display', serif; /* DM Serif Display for body text */
+  }
+
   h2, h3 {
     font-family: 'DM Serif Display', serif; /* DM Serif Display for body text */
     color: rgb(76, 114, 139); /* Heading font color */
@@ -119,6 +123,30 @@ body {
   a:hover {
     text-decoration: underline;
   }
+
+  .wedding-button {
+    font-family: 'DM Serif Display', serif; /* DM Serif Display for body text */
+    background-color: transparent; /* Button background color */
+    color: rgb(76, 114, 139); /* Text color */
+    border: 2px solid rgb(76, 114, 139); /* Border color matching text */
+    padding: 10px 20px; /* Padding for button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Transition for hover effect */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.wedding-button:hover {
+    background-color: rgb(76, 114, 139); /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+#travel-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 
   
   /* Overlay for Password Protection */
